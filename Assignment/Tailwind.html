@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center bg-gray-900 text-yellow-500 p-5">
+        <h1 class="font-bold text-2xl">My First Tailwind CSS Assignment</h1>
+        <p>Pricing Table by using Tailwind CSS</p>
+    </header>
+    <div class="bg-gray-900 grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <section class="text-xl m-10 text-yellow-700">
+            <h1 class="font-bold text-2xl text-yellow-700">Contact Form</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in ea deleniti eaque adipisci, recusandae quo molestiae blanditiis obcaecati expedita suscipit odio provident libero rem dignissimos tempore magnam est voluptate!</p>
+            <br>
+            <div>
+                <button class="inline rounded-md bg-yellow-500 px-4 py-1.5 text-center text-l border-2 border-yellow-500 text-gray-900 hover:text-yellow-500 hover:text-l hover:bg-gray-900">Learn More</button>
+                <button class="inline rounded-md bg-gray-900 px-4 py-1.5 text-center text-l border-2 border-yellow-500 text-yellow-500 hover:text-gray-900 hover:text-l hover:bg-yellow-500">Contact Me</button>
+            </div>
+        </section>
+        <div class="bg-gray-900">
+            <form class="mx-auto mt-16 max-w-xl sm:mt-10">
+            <div class="grid grid-cols-1 gap-8 gap-y-6 grid-cols-2"><div>
+            <label for="first-name" class="block text-sm/6 font-semibold text-yellow-700">First name</label>
+            <div class="mt-2">
+                <input id="first-name" type="text" name="first-name" class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-9 focus:-outline-offset-2">
+            </div>
+        </div>
+        <div>
+            <label for="last-name" class="block text-sm/6 font-semibold text-yellow-700">Last name</label>
+            <div class="mt-2">
+                <input id="last-name" type="text" name="last-name" class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-9 focus:-outline-offset-2">
+            </div>
+        </div>
+        <div class="sm:col-span-2">
+            <label for="email" class="block text-sm/6 font-semibold text-yellow-700">Email</label>
+            <div class="mt-2">
+                <input id="email" type="email" name="email" class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-9 focus:-outline-offset-2">
+            </div>
+        </div>
+        <div class="sm:col-span-2">
+        <label for="phone-number" class="block text-sm/6 font-semibold text-yellow-700">Phone number</label>
+        <div class="mt-2.5">
+            <div class="flex rounded-md bg-white/5 outline-1 -outline-offset-1 outline-white/10 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-500">
+                <div class="grid grid-cols-1"></div>
+                <input id="phone-number" type="text" name="phone-number" placeholder="+91 01234-56789" class="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6">
+            </div>
+        </div>
+        </div>
+        <div class="sm:col-span-2">
+            <label for="message" class="block text-sm/6 font-semibold text-yellow-700">Message</label>
+            <div class="mt-2.5">
+                <textarea id="message" name="message" rows="2" class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2"></textarea>
+            </div>
+        </div>
+        </div>
+        <div class="mt-10 mb-10">
+            <button type="submit" class="block w-full rounded-md bg-yellow-500 px-3.5 py-2.5 text-center text-xl border-2 border-yellow-500 font-bold text-gray-900 hover:font-bold hover:text-yellow-500 hover:text-xl shadow-xs hover:bg-gray-900 focus-visible:outline-2 focus-visible:outline-offset-2">Submit</button>
+        </div>
+        </form>
+        </div>
+    </div>
+    <div class="bg-gray-900">
+        <main class="max-w-7xl mx-auto px-6 py-16">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-yellow-700">Choose a plan that fits</h1>
+            </div>
+    
+            <!-- Pricing grid -->
+            <section class="grid gap-4 lg:grid-cols-3 lg:items-start">
+            
+                <!-- Basic -->
+                <div class="bg-gray-900 rounded-2xl border-2 border-yellow-700 shadow-sm p-6 flex flex-col">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-700">Basic</h3>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold text-yellow-500">$9</span>
+                            <span class="text-sm text-yellow-700">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="mt-6 space-y-3 flex-1 text-sm text-gray-700">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Up to 5 projects</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Community support</span>
+                        </li>
+                        <li class="flex items-center gap-3 opacity-80">
+                            <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                            <span class="text-red-500">Advanced analytics</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block w-full text-center rounded-lg px-4 py-2 font-bold border border-yellow-500 bg-gray-900 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900">Start free</a>
+                    </div>
+                </div>
+                <!-- Pro -->
+                <div class="bg-gray-900 rounded-2xl border-4 border-yellow-500 shadow-sm p-6 flex flex-col">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-700">Pro</h3>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold text-yellow-500">$99</span>
+                            <span class="text-sm text-yellow-700">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="mt-6 space-y-3 flex-1 text-sm text-gray-700">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Up to 30 projects</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Community support</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Advanced analytics</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block w-full text-center rounded-lg px-4 py-2 font-bold border border-yellow-500 bg-gray-900 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900">Start free</a>
+                    </div>
+                </div>
+                <!-- Advance -->
+                <div class="bg-gray-900 rounded-2xl border-2 border-yellow-700 shadow-sm p-6 flex flex-col">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-700">Advance</h3>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-bold text-yellow-500">$49</span>
+                            <span class="text-sm text-yellow-700">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="mt-6 space-y-3 flex-1 text-sm text-gray-700">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Up to 15 projects</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Community support</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-green-500">Advanced analytics</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block w-full text-center rounded-lg px-4 py-2 font-bold border border-yellow-500 bg-gray-900 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900">Start free</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="bg-gray-900 text-yellow-700 text-center pt-3 pb-3">
+        <p class="mb-0">@ 2025 My First Bootstrap Assignment</p>
+    </footer>
+</body>
+</html>
